@@ -50,10 +50,10 @@ app.post("/", function (req, res) {
     }
 
     response.on("data", function (data) {
-      // console.log(JSON.parse(data));
+      console.log(JSON.parse(data));
     });
   });
-  console.log("here 5");
+  alert("here 5");
   request.write(jsonData);
   request.end();
 });
